@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Pierre feuille ciseaux</title>
+</head>
+<body>
+       <!-- affichage de la tête de page -->
+    <header>
+        <h1>Pierre Feuille Ciseaux</h1>
+        <h2 id="score_jouer">Score joueur : 0</h2>
+        <h3 id="score_ordi">Score Ordi : 0</h3>
+
+    </header>
+    <main>
+        <div class="decompte">
+            <h2 id="pierre" >Pierre</h2>
+        </div>
+        <!-- conteneur de boutons du jeux -->
+        <div class="conteneur_jeux">
+            <button id="btn_pierre" class="btn_all">👊</button>
+            <button id="btn_feuille" class="btn_all">✋</button>
+            <button id="btn_ciseaux" class="btn_all">✌️</button>
+        </div>
+
+        <!-- conteneur d'affichache des résults -->
+        <div class="conteneur_issue ">
+            <span id="result_joueur" ></span>
+            <span id="issue" class="span_transitio"></span>
+            <span id="result_ordi" class="span_transitio"></span>
+        </div>
+
+        <!-- conteneur du boutons reset -->
+        <div class="conteneur_reset">
+            <button class="btn_all" id="btn_reset">🔴</button>
+            <p></p>
+
+        </div>
+
+    </main>
+    <script src="app.js"></script>   
+</body>
+</html>
